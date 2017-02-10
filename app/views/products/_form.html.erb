@@ -1,17 +1,29 @@
 <%= render "layouts/errors", :object => @product %>
 
-<%= form_for @product do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.label :cost %>
-  <%= f.number_field :cost %>
-  <%= f.label :country %>
-  <%= f.text_field :country %>
-  <%= f.label :interests %>
-  <%= f.text_field :interests %>
-  <%= f.label :image %>
-  <%= f.text_field :image %>
-  <%= f.submit  %>
-<% end %>
+<div class="center">
+  <%= form_for @product do |f| %>
+    <%= f.text_field :name %>
+    <%= f.label :name %>
 
-<p><%= link_to "Return to Products", products_path %></p>
+
+    <%= f.number_field :cost %>
+    <%= f.label :cost %>
+
+
+    <%= f.text_field :country %>
+    <%= f.label :country %>
+
+
+    <%= f.text_field :interests %>
+    <%= f.label :interests %>
+
+
+    <%= f.text_field :image %>
+    <%= f.label :image %>
+    <br>
+    <%= f.submit %>
+  <% end %>
+
+  <p><%= link_to "Return to Products", products_path %></p>
+
+</div>

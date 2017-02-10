@@ -10,7 +10,7 @@
 
   <body>
     <nav class="navbar navbar-default navbar-fixed-top">
-      <a href="/" class="brand-logo left">Gummi Bear Kingdom</a>
+      <%= link_to "GB Island", products_path, class: "brand-logo" %>
       <%= yield(:navbar) %>
     </nav>
     <div class="container">

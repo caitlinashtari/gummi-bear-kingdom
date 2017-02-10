@@ -4,10 +4,17 @@
   </ul>
 <% end %>
 
-<h1>Products</h1>
+<div class="row">
+  <div class="col s12 welcome center">
+      <h2>Welcome to Gummi Bear Island</h2>
+      <h3>The one-stop shop for all of your gummi bear needs!</h3>
+      <img src="http://www.raymondgeddes.com/content/images/thumbs/0009761_scented-gummy-bear-pencil-grip.jpeg" alt="gummi bears">
+  </div>
 
-<ul>
-  <% @products.each do |product| %>
-    <li><%= link_to product.name, product_path(product) %></li>
-  <% end %>
-</ul>
+  <div class="col s12 productList center">
+    <h3>Products</h3>
+      <% @products.each do |product| %>
+        <h5><%= link_to product.name, product_path(product) %></h5>
+      <% end %>
+  </div>
+</div>

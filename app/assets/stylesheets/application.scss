@@ -1,16 +1,56 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "materialize/components/color";
-$primary-color: color("blue", "lighten-2") !default;
-$secondary-color: color("yellow", "base") !default;
+$primary-color: color("pink", "accent-3") !default;
+$secondary-color: color("light-green", "accent-3") !default;
 @import 'materialize';
 
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
+@import url('https://fonts.googleapis.com/css?family=Chicle');
+$bubbles: 'Chicle', cursive;
+$hand: 'Patrick Hand', cursive;
+$hotGreen: #76ff03;
+$hotPink: #e91e63;
+
+body {
+  color: $hotPink;
+  font-family: $hand;
+  a {
+    color: $hotGreen;
+    &:hover {
+      color: $hotPink;
+      text-decoration: none;
+    }
+  }
+}
+
+nav.navbar {
+  background-color: #fff;
+  height: 60px;
+  border-bottom: none;
+  box-shadow: none;
+  color: $hotGreen;
+}
+
 a.brand-logo{
-  color: black;
+  padding-left: 10px;
+  letter-spacing: 7px;
+  padding-top: 20px;
+  color: #fff;
+  font-size: 3.5em;
+  font-weight: bold;
+  font-family: $bubbles;
+  color: $hotGreen;
+
 }
 
 .right a{
-  color: black;
+  padding-top: 20px;
+  color: $hotGreen;
+  font-size: 1.5em;
+  &:hover {
+    background-color: transparent;
+  }
 }
 
 .container {
@@ -25,4 +65,21 @@ a.brand-logo{
 .notice {
   background-color: #c5e1a5;
   color: white;
+}
+
+.welcome img {
+  height: 90px;
+  width: auto;
+}
+
+input[type="text"], input[type="number"]  {
+  border-bottom: thick solid $hotPink;
+}
+
+input[type="submit"]  {
+  border-radius: 5px;
+  background-color: $hotPink;
+  color: $hotGreen;
+  margin-top: 20px;
+  height: 40px;
 }

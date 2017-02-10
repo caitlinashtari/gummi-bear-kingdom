@@ -12,4 +12,5 @@ class Product < ActiveRecord::Base
    self.country = self.country.upcase
    self.interests = self.interests.capitalize
   end
+
 end
