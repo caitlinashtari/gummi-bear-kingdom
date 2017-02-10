@@ -1,24 +1,38 @@
-# README
+# _Gummi Bear Island_
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### By _**Caitlin Ashtari**, 2/10/2017_
 
-Things you may want to cover:
+## Description
 
-* Ruby version
+The Gummi Bear Kingdom's new website equipped with product lists, functionality to add new products, as well as edit and delete products.
 
-* System dependencies
+## Prerequisites
 
-* Configuration
+You will need the following things properly installed on your computer.
 
-* Database creation
+* Ruby
+* Rails
+* Postgres
 
-* Database initialization
+## Installation
 
-* How to run the test suite
+* `git clone https://github.com/caitlinashtari/gummi-bear-kingdom
+* `cd gummi-bear-kingdom`
+* `rails db:create`
+* `rails db:migrate`
+* `rails db:test:prepare`
 
-* Services (job queues, cache servers, search engines, etc.)
+## Running / Development
 
-* Deployment instructions
+* `rails serve`
+* Visit your app at [http://localhost:3000](http://localhost:3000).
 
-* ...
+## Technologies Used
+
+_Rails, Ruby, Bootstrap, MaterializeCSS, ActiveRecord, Postgres _
+
+### License
+
+*MIT License*
+
+Copyright (c) 2017 **_Caitlin Ashtari_**
