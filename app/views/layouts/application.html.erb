@@ -8,15 +8,15 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <% content_for(:navbar) do %>
-    <li><a href="/">Home</a></li>
-    <li><a href="something/else">Something else</a></li>
-    <li><a href="etc">Etc.</a></li>
-  <% end %>
-
-  <body class="container">
-    <%= flash[:alert] %>
-    <%= flash[:notice] %>
-    <%= yield %>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <a href="/" class="brand-logo left">Gummi Bear Kingdom</a>
+      <%= yield(:navbar) %>
+    </nav>
+    <div class="container">
+      <%= flash[:alert] %>
+      <%= flash[:notice] %>
+      <%= yield %>
+    </div>
   </body>
 </html>

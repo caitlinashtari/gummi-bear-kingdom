@@ -4,3 +4,15 @@
 $primary-color: color("blue", "lighten-2") !default;
 $secondary-color: color("yellow", "base") !default;
 @import 'materialize';
+
+a.brand-logo{
+  color: black;
+}
+
+.right a{
+  color: black;
+}
+
+.container {
+  padding-top: 100px;
+}
