@@ -4,7 +4,7 @@
 
 ## Description
 
-The Gummi Bear Kingdom's new website equipped with product lists, functionality to add new products, as well as edit and delete products.
+The Gummi Bear Kingdom's new website equipped with product lists, and functionality to add, edit, and delete products.
 
 ## Prerequisites
 
