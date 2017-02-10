@@ -14,8 +14,11 @@
       <%= yield(:navbar) %>
     </nav>
     <div class="container">
-      <%= flash[:alert] %>
-      <%= flash[:notice] %>
+      <% if flash[:alert] %>
+        <p class="alert center"><%= flash[:alert] %></p>
+      <% elsif flash[:notice] %>
+        <p class="notice center"><%= flash[:notice] %></p>
+      <%end%>
       <%= yield %>
     </div>
   </body>
