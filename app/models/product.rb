@@ -3,4 +3,5 @@ class Product < ActiveRecord::Base
   validates :cost, :presence => true
   validates :country, :presence => true
   validates :interests, :presence => true
+  validates :image, :presence => true
 end
